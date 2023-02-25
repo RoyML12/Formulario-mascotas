@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <script src="formulario.js"></script>
+<head>
+	<title>Formulario de Vendedor de Perros</title>
+	<link rel="stylesheet" href="formulario.css">
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+    <!---->            <img src="https://foroalfa.org/imagenes/ilustraciones/hd/697.webp" alt="Logo de la marca">
+            </div>
+            <nav>
+               <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Raza</a></li>
+                    <li><a href="#">Tamaño</a></li>
+                    <li><a href="#">Cartilla de vacunación</a></li>
+
+               </ul>            
+            </nav>
+            <a class="btn" href="#"><button>Contáctanos</button></a>
+    
+    <!---->        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+    
+    <!---->        <div id="mobile-menu" class="overlay">
+    <!---->            <a onclick="closeNav()" href="" class="close">&times;</a>
+    <!---->            <div class="overlay-content">
+    <!---->                <a href="#">Inicio</a>
+    <!---->                <a href="#">Raza</a>
+    <!---->                <a href="#">Tamaño</a>
+                           <a href="#">Cartilla de vacunación</a>
+    <!---->                <a href="#">Contactanos</a>
+    <!---->            </div>
+    <!---->        </div>
+    
+        </header>
+      </div>
+</head>
+<body>
+	<form>
+		<div class="form">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required>
+			<label for="fecha_nacimiento">Fecha de nacimiento:</label>
+			<input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="dd/mm/aaaa" required>
+			<label for="raza">Raza:</label>
+			<select id="raza" name="raza" required>
+				<option value="">Seleccione una raza</option>
+				<option value="labrador">Labrador</option>
+				<option value="bulldog">Bulldog</option>
+				<option value="pastor_aleman">Pastor Alemán</option>
+			</select>
+			<label for="sexo">Sexo:</label>
+			<input type="radio" id="sexo_macho" name="sexo" value="macho" required>
+			<label for="sexo_macho">Macho</label>
+			<input type="radio" id="sexo_hembra" name="sexo" value="hembra" required>
+			<label for="sexo_hembra">Hembra</label>
+			<label for="telefono">Teléfono:</label>
+			<input type="tel" id="telefono" name="telefono" required>
+			<input type="submit" value="Enviar">
+		</div>
+		<div>
+			<img src="https://via.placeholder.com/300x300?text=Foto+de+perro" alt="Foto del perro">
+		</div>
+	</form>
+</body>
+</html>
